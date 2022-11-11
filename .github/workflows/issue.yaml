@@ -2,6 +2,9 @@ name: Issue Composite Action
 
 on:
   workflow_call:
+    secrets:
+      MY_GITHUB_TOKEN:
+        required: true
 
 jobs:
   triage:
