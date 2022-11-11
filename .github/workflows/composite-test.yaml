@@ -9,7 +9,7 @@ jobs:
     steps:
       # - name: Composite
       #   if: always()
-      #   uses: xavierchanth/actions-playground/issue.yaml@trunk
+      #   uses: xavierchanth/actions-playground/composite/issue@trunk
 
       # Requires a checkout
       # Error Message:
@@ -17,4 +17,4 @@ jobs:
 
       - name: Callable
         if: always()
-        uses: xavierchanth/actions-playground/composite/issue@trunk
+        uses: xavierchanth/actions-playground/issue.yaml@trunk
