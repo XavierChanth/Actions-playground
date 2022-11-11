@@ -7,9 +7,13 @@ jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-      - name: Composite
-        if: always()
-        uses: xavierchanth/actions-playground/issue.yaml@trunk
+      # - name: Composite
+      #   if: always()
+      #   uses: xavierchanth/actions-playground/issue.yaml@trunk
+
+      # Requires a checkout
+      # Error Message:
+      # Can't find 'action.yml', 'action.yaml' or 'Dockerfile' under '/home/runner/work/_actions/xavierchanth/actions-playground/trunk/issue.yaml'. Did you forget to run actions/checkout before running your local action?
 
       - name: Callable
         if: always()
