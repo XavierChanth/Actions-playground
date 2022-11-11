@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Composite
-        uses: xavierchanth/actions-playground/issue.yaml
+        uses: xavierchanth/actions-playground/issue.yaml@trunk
 
       - name: Callable
-        uses: xavierchanth/actions-playground/composite/issue
+        uses: xavierchanth/actions-playground/composite/issue@trunk
