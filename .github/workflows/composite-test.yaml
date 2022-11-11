@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Composite
+        if: always()
         uses: xavierchanth/actions-playground/issue.yaml@trunk
 
       - name: Callable
+        if: always()
         uses: xavierchanth/actions-playground/composite/issue@trunk
