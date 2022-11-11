@@ -17,4 +17,4 @@ jobs:
 
       - name: Callable
         if: always()
-        uses: xavierchanth/actions-playground/issue.yaml@trunk
+        uses: xavierchanth/actions-playground/.github/workflows/issue.yaml@trunk
