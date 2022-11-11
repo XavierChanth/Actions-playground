@@ -6,6 +6,8 @@ on:
 jobs:
   triage1:
     uses: xavierchanth/actions-playground/.github/workflows/issue.yaml@trunk
+    secrets:
+      MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
   triage2:
     if: false # this allows you to test independently
     runs-on: ubuntu-latest
