@@ -4,17 +4,11 @@ on:
     types: [opened]
 
 jobs:
-  triage:
+  triage1:
+    uses: xavierchanth/actions-playground/.github/workflows/issue.yaml@trunk
+  triage2:
+    if: never() # this allows you to test independently
     runs-on: ubuntu-latest
     steps:
-      # - name: Composite
-      #   if: always()
-      #   uses: xavierchanth/actions-playground/composite/issue@trunk
-
-      # Requires a checkout
-      # Error Message:
-      # Can't find 'action.yml', 'action.yaml' or 'Dockerfile' under '/home/runner/work/_actions/xavierchanth/actions-playground/trunk/issue.yaml'. Did you forget to run actions/checkout before running your local action?
-
-      - name: Callable
-        if: always()
-        uses: xavierchanth/actions-playground/.github/workflows/issue.yaml@trunk
+      - uses: actions/checkout@v3
+      - uses: ./.composite/issue
