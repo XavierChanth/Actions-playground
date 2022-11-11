@@ -7,7 +7,7 @@ jobs:
   triage1:
     uses: xavierchanth/actions-playground/.github/workflows/issue.yaml@trunk
   triage2:
-    if: never() # this allows you to test independently
+    if: false # this allows you to test independently
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
