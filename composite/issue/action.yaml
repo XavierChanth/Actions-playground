@@ -1,0 +1,13 @@
+name: Issue Composite Action
+description: testing
+
+runs:
+  using: composite
+  steps:
+    - name: 'Move issue to "Triage"'
+      uses: leonsteinhaeuser/project-beta-automations@v2.0.1
+      with:
+        gh_token: ${{ secrets.MY_GITHUB_TOKEN }}
+        organization: xavierchanth
+        project_id: 4
+        resource_node_id: ${{ github.event.issue.node_id }}

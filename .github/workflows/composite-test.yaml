@@ -1,0 +1,14 @@
+name: composite testing
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Composite
+        uses: xavierchanth/actions-playground/issue.yaml
+
+      - name: Callable
+        uses: xavierchanth/actions-playground/composite/issue
