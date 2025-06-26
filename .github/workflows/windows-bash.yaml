@@ -15,3 +15,8 @@ jobs:
       - shell: bash
         run: |
           ./windows-bash.sh
+          # Testing env indicators
+          uname
+          uname -a
+          uname -m
+          cat /etc/os-release
