@@ -11,3 +11,7 @@ jobs:
         run: |
           echo "hello"
           echo "abc123" | sed -e 's/b/d/' | cat
+      - uses: actions/checkout@v4
+      - shell: bash
+        run: |
+          ./windows-bash.sh
