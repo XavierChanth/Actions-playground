@@ -1,0 +1,13 @@
+name: Windows Bash experiment
+
+on:
+  workflow_dispatch:
+
+jobs:
+  main:
+    runs-on: windows-latest
+    steps:
+      - shell: bash
+        run: |
+          echo "hello"
+          echo "abc123" | sed -e 's/b/d/' | cat
