@@ -19,6 +19,5 @@ jobs:
           uname
           uname -a
           uname -m
-          cat /etc/os-release
           # Testing jq on windows
           echo ' { "apple": { "banana": "clementine" } }' | jq ".apple = (.apple | tostring )"
